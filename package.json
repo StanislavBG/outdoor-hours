@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/emit-manifest.mjs",
     "preview": "vite preview",
     "sync": "rm -rf ../Bilko/public/projects/outdoor-hours && cp -r dist ../Bilko/public/projects/outdoor-hours"
   },
